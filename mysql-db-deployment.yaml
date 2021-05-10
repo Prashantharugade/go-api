@@ -35,3 +35,5 @@ spec:
               name: mysql-persistent-storage # This name should match the name specified in `volumes.name`
       volumes:                        # A PersistentVolume is mounted as a volume to the Pod  
       - name: mysql-persistent-storage 
+      persistentVolumeClaim:
+          claimName: mysql-pv-claim
